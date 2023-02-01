@@ -1,5 +1,7 @@
-import { mount } from "products/ProductsIndex";
-import "cart/cartShow";
+import { mount as productsMount } from "products/ProductsIndex";
+import { mount as cartMount } from "cart/cartShow";
 
-mount(document.querySelector("#my-products"));
+productsMount(document.querySelector("#my-products"));
+cartMount(document.querySelector("#my-cart"));
+
 console.log("Bootstrap.js loaded");
